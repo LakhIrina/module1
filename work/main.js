@@ -207,3 +207,18 @@ function colorInput(){
 };
 
 document.getElementById("replaceInput").addEventListener("click", colorInput, false);
+
+//6
+var n = 0;
+function recursion(arr){
+
+    console.log(arr[n]);
+    n++;
+    // var n = arr.length;
+
+    if(n < arr.length) {
+        recursion(arr);
+    }
+};
+
+recursion([1,9,18,4,3]);
