@@ -144,3 +144,36 @@ function focusInput(){
 };
 
 input.addEventListener("blur", focusInput, false);
+
+//11
+function findNumber(){
+    var numbers = [1, 2, 5, 9, 4, 13, 4, 10];
+    var i = 0;
+
+    for(i; i<numbers.length; i++){
+        if(numbers[i] === 4){
+
+            console.log('Present!');
+            return;
+        }
+    }
+    console.log('Not found!');
+};
+
+findNumber();
+
+//19
+function findElements(numbersOne, numbersTwo){
+    var newArr = [];
+
+    for(var i = 0; i < numbersOne.length; ++i){
+        for(var j = 0; j < numbersTwo.length; ++j){
+            if (numbersOne[i] == numbersTwo[j])
+                newArr.push(numbersOne[i]);
+        }
+    }
+    console.log(newArr);
+    return newArr;
+};
+
+findElements([1,2,8,9,14,91,3,21], [2,3,7,8,14,72]);
