@@ -116,3 +116,31 @@ function findElement(array, number){
 };
 
 findElement([2,5,9], 4);
+
+//21
+function addText(){
+    document.getElementById('someText').value = "Hello";
+};
+
+document.getElementById("buttonTask21").addEventListener("click", addText, false);
+
+//24
+function addInput(){
+    var input=document.createElement('input');
+    input.type = 'text';
+    input.name = 'value';
+    document.body.appendChild(input); //или можно через innerHTML
+};
+
+document.getElementById("addInput").addEventListener("click", addInput, false);
+
+//25
+var input = document.getElementById("someText25");
+
+function focusInput(){
+    var val = input.value;
+
+    console.log(val);
+};
+
+input.addEventListener("blur", focusInput, false);
