@@ -191,3 +191,19 @@ function replaceInput(){
 };
 
 document.getElementById("replaceInput").addEventListener("click", replaceInput, false);
+
+//23
+function colorInput(){
+    var input1 = document.getElementById('someText22a');
+    var value1 = input1.value;
+    var input2 = document.getElementById('someText22b');
+    var value2 = input2.value;
+    input2 = value1;
+    input1 = value2;
+    input2.style.color = 'red';
+    input1.style.color = 'blue';
+
+    console.log(input1, input2);
+};
+
+document.getElementById("replaceInput").addEventListener("click", colorInput, false);
