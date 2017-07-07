@@ -77,3 +77,24 @@ function joinsentenses(){
 };
 
 joinsentenses();
+
+
+//13
+function concat() {
+    var arrOne = ['a', 'b', 'c'];
+    var arrTwo = [1, 2, 3];
+    var newArr = arrOne.concat(arrTwo);
+
+    console.log(newArr);
+
+};
+concat();
+
+//14
+function addElem(){
+    var arr = ['a', 'b', 'c'];
+    var newArr = arr.push('1', '2', '3');
+
+    console.log(arr);
+}
+addElem();
