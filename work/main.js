@@ -98,3 +98,21 @@ function addElem(){
     console.log(arr);
 }
 addElem();
+
+//17
+function findElement(array, number){
+    var i = 0;
+    var index;
+
+    for(i; i<array.length; i++){
+        if(array[i] === number){
+            index = array.indexOf(number);
+
+            console.log('Index: ', index);
+            return index;
+        }
+    }
+    console.log('Not found');
+};
+
+findElement([2,5,9], 4);
