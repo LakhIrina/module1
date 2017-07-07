@@ -38,3 +38,42 @@ function loop1() {
     }
 };
 loop1();
+
+//8
+function outObj() {
+    var key;
+    var value;
+    var obj = {
+        'Оттава': 'Канада',
+        'Киев': 'Украина'
+    };
+
+    for (key in obj) {
+        console.log(key + "- это " + obj[key]);
+    }
+}
+
+outObj();
+
+//10
+function scanArray(){
+    var array = [2, 5, 9, 15, 0, 4];
+    var i = 0;
+
+    for(i; i<array.length; i++){
+        if(array[i]<3 || array[i]>10){
+            console.log('number:', array[i]);
+        }
+    }
+};
+scanArray();
+
+//12
+function joinsentenses(){
+    var array = ['я', 'учу', 'javascript', '!'];
+    var joinArray = array.join(' ');
+
+    console.log(joinArray);
+};
+
+joinsentenses();
