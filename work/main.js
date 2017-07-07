@@ -177,3 +177,17 @@ function findElements(numbersOne, numbersTwo){
 };
 
 findElements([1,2,8,9,14,91,3,21], [2,3,7,8,14,72]);
+
+//22
+function replaceInput(){
+    var input1 = document.getElementById('someText22a');
+    var value1 = input1.value;
+    var input2 = document.getElementById('someText22b');
+    var value2 = input2.value;
+    input2 = value1;
+    input1 = value2;
+
+    console.log(input1, input2);
+};
+
+document.getElementById("replaceInput").addEventListener("click", replaceInput, false);
